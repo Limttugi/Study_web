@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/****************************************/
+.login{
+    border: 1px solid #eeeeee;
+    background-color: #f5f5f5;
+    width: 800px;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px black;
+}
+.login span{
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;;
+}
+.login input[type=email],
+.login input[type=password]{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    padding-left: 50px;
+}
+.login input[type=email]:hover,
+.login input[type=password]:hover{
+    box-shadow: 0 0 5px dodgerblue;
+}
+.login input[type=email]:focus::placeholder,
+.login input[type=password]:focus::placeholder{
+    visibility: hidden;
+}
+.login input[type=email]{
+    background: #fff url(icon-email.png) no-repeat center left 10px;
+}
+.login input[type=password]{
+    background: #fff url(icon-lock.png) no-repeat
+    center left 10px;
+}
+.login p {
+    overflow: hidden;
+}
+.login p label {
+    float: left;
+}
+.login p a:hover {
+    text-decoration: underline;
+}
+.login p a {
+    float: right;
+}
+.login button{
+    background-color: royalblue;
+    color: white;
+    border-radius: 5px;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}

@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.custom input[type=checkbox],
+.grade input[type=radio]{
+    display: none;
+}
+.custom label em,
+.grade label em{
+    display: inline-block;
+    width: 18px; /*이미지의 크기*/
+    height: 18px; /*이미지의 크기*/
+    vertical-align: middle;
+    margin-right: 5px;
+    background-position: left center; 
+}
+.custom input[type=checkbox]:checked + label em,
+.grade input[type=radio]:checked + label em{
+    background-position: right center;
+}
+.custom label em{
+    background: url(images/checkbox-01.png) no-repeat;
+}
+.grade label em{
+    background: url(images/radio-01.png) no-repeat;
+}
+.grade input[type=radio]:checked + label {
+    color: crimson;
+}
+.custom label,
+.grade label{
+    cursor: pointer;
+}

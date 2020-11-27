@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/****************************************/
+.container{
+    width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid black;
+}
+.login{
+    padding: 20px;
+}
+.login input[id=number]{
+    width: 200px;
+}
+.login button{
+    cursor: pointer;
+}
+.login input[id=number],
+.login button{
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+}

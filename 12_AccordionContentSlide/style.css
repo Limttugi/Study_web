@@ -1,0 +1,83 @@
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* ************************************** */
+section{}
+section article{
+    width: 980px;
+    height: 500px;
+}
+.heading{
+    text-align: center;
+}
+.heading span{
+    font-size: 24px;
+    color: crimson;
+}
+.heading h1{
+    font-size: 36px;
+    margin-top: 10px;
+}
+.heading h1 em{
+    position: relative;
+    font-style: normal;
+}
+.heading h1 em:before{
+    position: absolute;
+    content: url(logo-kakao.png);
+    top: -25px;
+    right: -20px;
+}
+.content{}
+.content > div{
+    width: 50%;
+    float: left;
+    height: 400px;
+    box-sizing: border-box;
+}
+.accordion{}
+.title{
+    position: relative;
+    border: 1px solid dodgerblue;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.title:hover,
+.title.active{
+    background-color: blue;
+    color: white;
+}
+.title:after{
+    position: absolute;
+    content: '\f105';
+    font-family: fontawesome;
+    right: 10px;
+    top: 10px;
+    transition: 0.3s;
+}
+.title.active:after{
+    transform: rotate(90deg);
+    color: orange;
+}
+.desc{
+    display: none;
+    padding: 10px;
+}
+.desc.active{
+    display: block;
+}
+.image{}

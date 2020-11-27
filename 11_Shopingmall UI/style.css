@@ -1,0 +1,140 @@
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eeeeee;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* ************************************** */
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+.item{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.detail{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 250px;
+    bottom: -177px;
+    left: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.item:hover img{
+    filter: blur(2px);
+}
+.item:hover .detail{
+    bottom: 0;
+}
+.title{
+    font-size: 14px;
+    border-bottom: 1px solid #dddddd;
+    overflow: hidden;
+}
+.title h3{
+    margin-top: 0;
+    float: left;
+}
+.title h3 em{
+    display: block;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+.title span{
+    float: right;
+    margin-top: 20px;
+}
+.info{
+    position: relative;
+}
+.size{
+    margin-top: 10px;
+}
+.size span{
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    padding: 3px;
+    border-radius: 3px;
+}
+.size span.active{
+    background-color: black;
+    color: white;
+}
+.color span{
+    display: inline-block;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    padding: 3px;
+}
+.color span:nth-of-type(1){
+    background-color: red;
+}
+.color span:nth-of-type(2){
+    background-color: blue;
+}
+.color span:nth-of-type(3){
+    background-color: green;
+}
+.color span:nth-of-type(4){
+    background-color: pink;
+}
+.color span:nth-of-type(5){
+    background-color: yellow;
+}
+.color span.active{
+    border-radius: 50%;
+}
+.size,
+.color{
+    margin-bottom: 10px;
+}
+.size label,
+.color label{
+    display: block;
+}
+.add-cart{
+    border: 1px solid #dddddd;
+    width: 100%;
+    padding: 7px;
+    background-color: white;
+    cursor: pointer;
+}
+.add-cart:hover{
+    background-color: black;
+    color: white;
+}
+.like{
+    cursor: pointer;
+}
+.like:before{
+    position: absolute;
+    content: '\f08a';
+    font-family: fontawesome;
+    color: #bbbbbb;
+    top: 0;
+    right: 0;
+}
+.like.active:before{
+    content: '\f004';
+    color: crimson;
+}

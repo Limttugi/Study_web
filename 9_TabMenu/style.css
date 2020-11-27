@@ -1,0 +1,72 @@
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ececec;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/****************************************/
+section{
+    width: 800px;
+}
+.heading{
+    margin-bottom: 20px;
+}
+.heading input[type=text]{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    background: white url(search-icon.png) no-repeat center left 5px;
+    background-size: 25px;
+    padding-left: 40px;
+}
+.btn{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.btn li{
+    float: left;
+    background-color: lightgray;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    border-right: 1px solid #c7c7c7;
+    padding: 5px;
+    border-top: 2px solid transparent;
+}
+.btn li:last-child{
+    width: 180px;
+}
+.btn li.active{
+    background-color: white;
+    border-top: 2px solid red;
+    border-right: none;
+}
+.tabs{
+    background-color: white;
+    box-shadow: 0 0 5px lightgray;
+}
+.tabs div{
+    display: none;
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.tabs div h2{
+    text-align: center;
+}
+.tabs div img{
+    float: left;
+    margin-right: 20px;
+}
+.tabs div.active{
+    display: block;
+}
